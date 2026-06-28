@@ -34,6 +34,14 @@ Playwright-*launched* browser) gets a `403`. So the watcher never launches its o
 The panel is a localhost dashboard that mirrors DMIT's store layout (Datacenter → Generation → Instance
 Scale), leading with each plan's **stock status**, and updates live over SSE with a connection/stale indicator.
 
+## Install with an AI agent (easiest)
+
+Open this folder in an AI coding agent (e.g. Claude Code) and ask it to **"set up dmit-restock-watch"**.
+It follows the bundled setup skill ([`.claude/skills/setup/SKILL.md`](.claude/skills/setup/SKILL.md)) —
+installing the dependency, creating your Telegram bot and **auto-fetching your chat id**, writing the
+config, and starting the watcher — so you don't have to run any of it by hand. Prefer to do it yourself?
+Follow the manual steps below.
+
 ## Requirements
 
 - **Node.js ≥ 24** (uses the built-in `node:sqlite` and `node:test` — no external DB or test deps)
